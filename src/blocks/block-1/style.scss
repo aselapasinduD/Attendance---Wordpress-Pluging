@@ -1,0 +1,37 @@
+@font-face {
+	font-family: 'Digital-7';
+	src: url(./assets/fonts/digital-7.ttf) format(truetype);
+}
+
+.wp-block-create-block-shift-controller{
+	--attendance-font-size: 1.2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem 0;
+	gap: 20px;
+	.title{
+		font-size: 2rem;
+		text-align: center;
+		font-weight: 600;
+		margin: 0;
+	}
+	.attendance-shift-btn-container *{
+		font-size: var(--attendance-font-size);
+	}
+	.attendance-shift-btn-container{
+		display: flex;
+		gap: 1rem;
+		.attendance-shift-start-btn{
+
+		}
+		.attendance-shift-end-btn{
+			
+		}
+	}
+	.attendance-current-time{
+		font-family: 'Digital-7', sans-serif;
+		font-size: 4rem;
+		line-height: normal;
+	}
+}

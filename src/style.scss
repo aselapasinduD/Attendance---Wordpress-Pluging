@@ -1,0 +1,73 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.toplevel_page_attendance-app-root #wpcontent {
+    --padding-size: 10px;
+    height: 800px;
+    padding: var(--padding-size);
+    position: relative;
+    display: block;
+}
+
+button .components-spinner {
+    width: 15px;
+    height: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+.form-buttons {
+    display: flex;
+}
+.my-gutenberg-form .form-buttons {
+    margin-top: 20px;
+    margin-left: 1px;
+}
+.form-error {
+    color: #cc1818;
+}
+.form-buttons button {
+    margin-right: 4px;
+}
+.form-buttons .components-spinner {
+    margin-top: 0;
+}
+#attendance-app-root {
+    background-color: #fff;
+    width: calc(100% - var(--padding-size) * 4);
+    height: 700px;
+    padding: 20px;
+    border-radius: 20px;
+    .attendance-app{
+
+    }
+    .attendance-title{
+        margin: unset;
+        text-align: center;
+    }
+}
+
+#attendance-app-root ul,
+#attendance-app-root ul li {
+    list-style-type: disc;
+}
+#attendance-app-root ul {
+    padding-left: 20px;
+}
+#attendance-app-root .components-search-control__input {
+    height: 36px;
+    margin-left: 0;
+}
+
+#attendance-app-root .list-controls {
+    display: flex;
+    width: 100%;
+}
+
+#attendance-app-root .list-controls .components-search-control {
+    flex-grow: 1;
+    margin-right: 8px;
+}

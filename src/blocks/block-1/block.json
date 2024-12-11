@@ -1,0 +1,56 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/shift-controller",
+	"version": "0.1.0",
+	"title": "Shift Controller",
+	"category": "attendance-management",
+	"icon": "smiley",
+	"description": "Attendance Management System. Shift Controller block give function of Shift Start and Shit End.",
+	"example": {},
+	"attributes": {
+		"title": {
+			"type": "string",
+			"source": "html",
+			"selector": "h1",
+			"default": "Attendance Mark"
+		},
+		"style": {
+			"type": "object",
+			"background": {
+				"backgroundImage": {
+					"url":"IMAGE_URL"
+				},
+				"backgroundPosition":"50% 50%",
+				"backgroundSize": "cover"
+			},
+			"default": {
+				"elements": {
+					"button": {
+						"color": {
+							"text": "var:preset|color|contrast"
+						}
+					}
+				}
+			}
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": true,
+		"color": {
+			"button": true,
+			"text": true
+		},
+		"ariaLabel": true,
+		"background": {
+			"backgroundImage": true,
+			"backgroundSize": true
+		}
+	},
+	"textdomain": "attendance",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
