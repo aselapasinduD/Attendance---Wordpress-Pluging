@@ -18,10 +18,13 @@
 	}
 	.attendance-shift-btn-container *{
 		font-size: var(--attendance-font-size);
+		width: 160px;
+		padding: 10px 0;
+		border-radius: 14px;
 	}
 	.attendance-shift-btn-container{
 		display: flex;
-		gap: 1rem;
+		gap: 2rem;
 		.attendance-shift-start-btn{
 
 		}

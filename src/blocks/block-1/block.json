@@ -5,7 +5,6 @@
 	"version": "0.1.0",
 	"title": "Shift Controller",
 	"category": "attendance-management",
-	"icon": "smiley",
 	"description": "Attendance Management System. Shift Controller block give function of Shift Start and Shit End.",
 	"example": {},
 	"attributes": {
@@ -28,7 +27,8 @@
 				"elements": {
 					"button": {
 						"color": {
-							"text": "var:preset|color|contrast"
+							"text": "var:preset|color|contrast",
+							"background": "#0000000"
 						}
 					}
 				}

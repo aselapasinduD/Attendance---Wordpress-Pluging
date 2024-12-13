@@ -1,14 +1,16 @@
 <?php
 /**
  * Plugin Name:       Attendance
+ * Plugin URI:		  https://www.innentasolutions.com
  * Description:       Attendance Management System Provided By Innenta Solutions.
  * Requires at least: 6.6
  * Requires PHP:      7.2
  * Version:           0.1.0
  * Author:            Asela Pasindu
+ * Author URI: 		  https://www.innentasolutions.com
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       attendance
+ * Text Domain:       attendance-addon-from-innentasolutions
  *
  * @package CreateBlock
  */
@@ -47,7 +49,7 @@ function register_custom_block_category( $categories, $block_editor_context ) {
     // Add a new custom category.
     $categories[] = array(
         'slug'  => 'attendance-management',
-        'title' => __( 'Attendance Management', 'attendance' ),
+        'title' => __( 'Attendance Management', 'attendance-addon-from-innentasolutions' ),
         'icon'  => 'dashicons-admin-users',
     );
     
@@ -72,7 +74,6 @@ function attendance_admin_menu(){
 		'manage_options',
 		'attendance-app-root',
 		function () {
-			echo '<h2>' . esc_html__( 'Attendance', 'attendance' ) . '</h2>';
 			echo '<div id="attendance-app-root"></div>';
 		},
 		'dashicons-schedule',

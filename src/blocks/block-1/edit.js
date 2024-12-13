@@ -11,8 +11,8 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-import { useBlockProps } from '@wordpress/block-editor';
-import { TextControl } from '@wordpress/components';
+import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
+import { PanelBody, TextControl } from '@wordpress/components';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -47,8 +47,16 @@ export default function Edit({ attributes, setAttributes, isSelected }) {
     const seconds = currentTime.getSeconds();
 
     const updateTitle = (event) => setAttributes({ title: event.target.innerText});
+    const handleTitleUpdate = (titleValue) => setAttributes({title: titleValue});
+
+    
 	return (
 		<div { ...useBlockProps() }>
+            <InspectorControls>
+                <PanelBody title={__('Settings', 'attendance-addon-from-innentasolutions')}>
+                    <TextControl label={__('Title', 'attendance-addon-from-innentasolutions')} value={title} onChange={handleTitleUpdate} />
+                </PanelBody>
+            </InspectorControls>
             <div>
                 <h1 className='title' contentEditable suppressContentEditableWarning onBlur={updateTitle}>{title !== " "? title : 'Attendance Mark'}</h1>
             </div>
