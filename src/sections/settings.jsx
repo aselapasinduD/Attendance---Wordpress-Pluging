@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function Dashboard() {
+function Settings() {
     return (
         <div className="attendance-dashboard">
             <h1 className="attendance-title">Settings</h1>
@@ -8,4 +8,4 @@ function Dashboard() {
     );
 }
 
-export default Dashboard;
+export default Settings;

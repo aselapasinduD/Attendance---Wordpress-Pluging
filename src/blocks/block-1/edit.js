@@ -53,8 +53,8 @@ export default function Edit({ attributes, setAttributes, isSelected }) {
 	return (
 		<div { ...useBlockProps() }>
             <InspectorControls>
-                <PanelBody title={__('Settings', 'attendance-addon-from-innentasolutions')}>
-                    <TextControl label={__('Title', 'attendance-addon-from-innentasolutions')} value={title} onChange={handleTitleUpdate} />
+                <PanelBody title={__('Settings', 'attendance-addon-from-innenta-solutions')}>
+                    <TextControl label={__('Title', 'attendance-addon-from-innenta-solutions')} value={title} onChange={handleTitleUpdate} />
                 </PanelBody>
             </InspectorControls>
             <div>

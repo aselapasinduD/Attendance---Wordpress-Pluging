@@ -4,6 +4,7 @@ import { Button } from '@wordpress/components'
 
 import Dashboard from "./sections/dashboard";
 import AttendanceManage from './sections/attendanceManage';
+import Settings from './sections/settings';
 
 function App() {
     const [isOpenDashboard, openDashboard] = useState(true);
@@ -31,16 +32,17 @@ function App() {
     return(
         <>
             <div className="attendance-top-bar">
-			    <h2>{__( 'Attendance', 'attendance' )}</h2>
+			    <h2>{__( 'Attendance', 'attendance-addon-from-innenta-solutions' )}</h2>
                 <div className="attendance-top-bar-navigate-menu">
-                    <Button type="button" onClick={handleOpenDashboard} >{__( 'Dashboard', 'attendance-addon-from-innentasolutions' )}</Button>
-                    <Button type="button" onClick={handleOpenAttendanceManage} >{__( 'Attendance Manage', 'attendance-addon-from-innentasolutions' )}</Button>
-                    <Button type="button" onClick={handleOpenSettings} >{__( 'Settings', 'attendance-addon-from-innentasolutions' )}</Button>
+                    <Button type="button" onClick={handleOpenDashboard} >{__( 'Dashboard', 'attendance-addon-from-innenta-solutions' )}</Button>
+                    <Button type="button" onClick={handleOpenAttendanceManage} >{__( 'Attendance Manage', 'attendance-addon-from-innenta-solutions' )}</Button>
+                    <Button type="button" onClick={handleOpenSettings} >{__( 'Settings', 'attendance-addon-from-innenta-solutions' )}</Button>
                 </div>
 			</div>
             <div id="attendance-app-body">
                 {isOpenDashboard && <Dashboard />}
                 {isOpenAttendanceManage && <AttendanceManage />}
+                {isOpenSettings && <Settings />}
             </div>
             <footer>
                 <p>© Copyright 2024 Innenta Solutions. All rights reserved.</p>
